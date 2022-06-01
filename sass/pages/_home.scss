@@ -1,0 +1,318 @@
+@use '../abstracts' as *;
+
+////////////////////////////////////
+///////// SECTION HERO /////////
+////////////////////////////////////
+
+.hero {
+	height: 115vh;
+
+	z-index: 2;
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+		url(../../img/veres1.jpg);
+	background-size: cover;
+	background-position-y: 80%;
+
+	color: $clr-white;
+
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh);
+
+	&__container {
+		height: 100%;
+
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: repeat(9, 1fr);
+	}
+
+	&__heading {
+		grid-row: 4;
+		grid-column: 1;
+	}
+
+	&__paragraph {
+		font-size: 2rem;
+		line-height: 1.5;
+		font-weight: 300;
+
+		align-self: center;
+		grid-row: 5;
+		grid-column: 1;
+	}
+
+	&__btn {
+		height: fit-content;
+		width: fit-content;
+		grid-row: 7;
+		grid-column: 1;
+	}
+}
+
+.about {
+	position: relative;
+	margin-top: -5vh;
+
+	&__background {
+		height: 37vw;
+
+		position: absolute;
+		right: -3%;
+		top: 45%;
+
+		filter: contrast(70%) opacity(0.1);
+		transform-origin: top right;
+		transform: rotate(35deg) translate(50%, 0%);
+
+		z-index: -2;
+	}
+
+	&__container {
+		height: 100%;
+	}
+
+	&__box {
+		width: 100%;
+	}
+
+	&__shape {
+		margin: 0;
+		z-index: -1;
+		height: fit-content;
+		width: 100%;
+
+		position: relative;
+		float: left;
+
+		// clip-path: circle(50% at 50% 50%);
+		// shape-outside: circle(40% at 30% 50%);
+		shape-outside: ellipse(20% 50% at 42% 50%);
+		margin-right: 2rem;
+	}
+
+	&__img {
+		width: 80rem;
+	}
+
+	&__heading {
+		margin-bottom: 3.2rem;
+	}
+
+	&__description {
+		font-size: 2.2rem;
+	}
+
+	&__paragraph {
+		display: block;
+		line-height: 1.5;
+
+		&--1 {
+			margin-bottom: 4.8rem;
+			font-weight: 300;
+		}
+
+		&--2 {
+			font-size: 2rem;
+			text-align: center;
+			font-style: italic;
+		}
+	}
+}
+
+.gallery {
+	&__container {
+		position: relative;
+	}
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__wrapper {
+		position: relative;
+		height: 120rem;
+
+		list-style: none;
+		overflow: hidden;
+
+		@media only screen and (max-width: 90em) {
+			height: 80vw;
+		}
+	}
+
+	&__slide {
+		position: absolute;
+		height: 100%;
+		transition: all 1s;
+	}
+
+	&__photos {
+		height: 100%;
+		margin: 0 2.4rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1vw;
+	}
+
+	&__img {
+		object-fit: cover;
+		border-radius: 10px;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__nav-btns {
+		height: 100%;
+		width: 100%;
+		padding-top: 2.4rem;
+
+		display: flex;
+		gap: 2.4rem;
+		justify-content: center;
+	}
+
+	&__btn {
+		// position: absolute;
+		height: 5rem;
+		width: 5rem;
+		box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.1);
+		font-size: 2.6rem;
+		border-radius: 50%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&--left {
+			left: 45%;
+		}
+
+		&--right {
+			right: 45%;
+		}
+	}
+}
+
+.services {
+	position: relative;
+	overflow: hidden;
+
+	&__background {
+		position: absolute;
+
+		&--1 {
+			height: 35vw;
+			left: -12rem;
+			top: -13rem;
+
+			filter: contrast(70%) opacity(0.1);
+			// transform-origin: center;
+			transform: rotate(215deg) translate(-50%, 0%);
+
+			z-index: -2;
+		}
+		&--2 {
+			height: 37vw;
+			right: -16rem;
+			bottom: 10rem;
+
+			filter: contrast(70%) opacity(0.1);
+			// transform-origin: center;
+			transform: rotate(155deg) translate(50%, 0%);
+
+			z-index: -2;
+		}
+	}
+
+	&__container {
+		display: grid;
+
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		row-gap: 4.8rem;
+	}
+
+	&__heading {
+		text-align: center;
+		margin-bottom: 2.4rem;
+		grid-column: 1 / -1;
+	}
+
+	&__text-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 3.2rem;
+	}
+
+	&__number {
+		font-size: 9.2rem;
+		font-weight: 800;
+		color: $clr-light-grey--1;
+	}
+
+	&__list {
+		width: 100%;
+		list-style: none;
+		font-size: 2rem;
+
+		display: flex;
+		flex-direction: column;
+
+		gap: 1.6rem;
+	}
+
+	&__img-box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		overflow-y: hidden;
+		width: 50rem;
+		height: 50rem;
+
+		z-index: 1;
+
+		&::before {
+			position: absolute;
+			content: '';
+			height: 42.5rem;
+			width: 42.5rem;
+			background-color: $clr-main--2;
+			border-radius: 50%;
+			z-index: -1;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			height: 50rem;
+			width: 50rem;
+			background-color: $clr-main--3;
+			border-radius: 50%;
+			z-index: -2;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+
+		&::before {
+			content: url(../../svg/checkmark-outline.svg);
+			width: 2.4rem;
+			height: 2.4rem;
+		}
+	}
+
+	&__img {
+		height: 35rem;
+		width: 35rem;
+		border-radius: 50%;
+		background-color: $clr-main--1;
+
+		z-index: 2;
+	}
+}

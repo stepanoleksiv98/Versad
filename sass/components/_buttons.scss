@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.btn {
+	text-decoration: none;
+	cursor: pointer;
+	background: none;
+	border: none;
+
+	&--hero {
+		font-size: 2rem;
+		color: $clr-white;
+		padding: 2rem 4.2rem;
+		background-color: black;
+	}
+}

@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+//////////////////////////////////////
+////////// REUSABLE CLASSES //////////
+//////////////////////////////////////
+
+.main {
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 150rem;
+	margin: 0 auto;
+	padding: 0 4.8rem;
+}
+
+.heading-primary {
+	font-size: 5.6rem;
+	font-weight: 500;
+	letter-spacing: -2px;
+}
+
+.heading-secondary {
+	font-size: 4.8rem;
+	letter-spacing: -3px;
+	font-weight: 300;
+}
+
+.heading-tertiary {
+	font-size: 3.6rem;
+	letter-spacing: -1px;
+	font-weight: 200;
+}
+
+.margin-bot {
+	margin-bottom: 6.4rem;
+}
+
+.padding-bot {
+	padding-bottom: 6.4rem;
+}
+
+.padding-top {
+	padding-top: 6.4rem;
+}

@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.6rem;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+}
+
+.heading-primary {
+  font-size: 5.6rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  letter-spacing: -3px;
+  font-weight: 300;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  letter-spacing: -1px;
+  font-weight: 200;
+}
+
+.margin-bot {
+  margin-bottom: 6.4rem;
+}
+
+.padding-bot {
+  padding-bottom: 6.4rem;
+}
+
+.padding-top {
+  padding-top: 6.4rem;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.btn--hero {
+  font-size: 2rem;
+  color: #fff;
+  padding: 2rem 4.2rem;
+  background-color: black;
+}
+
+.header {
+  position: fixed;
+  height: 9.2rem;
+  width: 100%;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 300;
+  z-index: 999;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.nav__logo-img {
+  height: 2.8rem;
+  width: fit-content;
+  stroke: white;
+}
+.nav__logo-img--fill {
+  fill: white;
+}
+.nav__list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  height: 115vh;
+  z-index: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/veres1.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh);
+}
+.hero__container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+}
+.hero__heading {
+  grid-row: 4;
+  grid-column: 1;
+}
+.hero__paragraph {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  align-self: center;
+  grid-row: 5;
+  grid-column: 1;
+}
+.hero__btn {
+  height: fit-content;
+  width: fit-content;
+  grid-row: 7;
+  grid-column: 1;
+}
+
+.about {
+  position: relative;
+  margin-top: -5vh;
+}
+.about__background {
+  height: 37vw;
+  position: absolute;
+  right: -3%;
+  top: 45%;
+  filter: contrast(70%) opacity(0.1);
+  transform-origin: top right;
+  transform: rotate(35deg) translate(50%, 0%);
+  z-index: -2;
+}
+.about__container {
+  height: 100%;
+}
+.about__box {
+  width: 100%;
+}
+.about__shape {
+  margin: 0;
+  z-index: -1;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  float: left;
+  shape-outside: ellipse(20% 50% at 42% 50%);
+  margin-right: 2rem;
+}
+.about__img {
+  width: 80rem;
+}
+.about__heading {
+  margin-bottom: 3.2rem;
+}
+.about__description {
+  font-size: 2.2rem;
+}
+.about__paragraph {
+  display: block;
+  line-height: 1.5;
+}
+.about__paragraph--1 {
+  margin-bottom: 4.8rem;
+  font-weight: 300;
+}
+.about__paragraph--2 {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.gallery__container {
+  position: relative;
+}
+.gallery__heading {
+  text-align: center;
+}
+.gallery__wrapper {
+  position: relative;
+  height: 120rem;
+  list-style: none;
+  overflow: hidden;
+}
+@media only screen and (max-width: 90em) {
+  .gallery__wrapper {
+    height: 80vw;
+  }
+}
+.gallery__slide {
+  position: absolute;
+  height: 100%;
+  transition: all 1s;
+}
+.gallery__photos {
+  height: 100%;
+  margin: 0 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+.gallery__img {
+  object-fit: cover;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.gallery__nav-btns {
+  height: 100%;
+  width: 100%;
+  padding-top: 2.4rem;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+.gallery__btn {
+  height: 5rem;
+  width: 5rem;
+  box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 2.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__btn--left {
+  left: 45%;
+}
+.gallery__btn--right {
+  right: 45%;
+}
+
+.services {
+  position: relative;
+  overflow: hidden;
+}
+.services__background {
+  position: absolute;
+}
+.services__background--1 {
+  height: 35vw;
+  left: -12rem;
+  top: -13rem;
+  filter: contrast(70%) opacity(0.1);
+  transform: rotate(215deg) translate(-50%, 0%);
+  z-index: -2;
+}
+.services__background--2 {
+  height: 37vw;
+  right: -16rem;
+  bottom: 10rem;
+  filter: contrast(70%) opacity(0.1);
+  transform: rotate(155deg) translate(50%, 0%);
+  z-index: -2;
+}
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 4.8rem;
+}
+.services__heading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  grid-column: 1/-1;
+}
+.services__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.services__number {
+  font-size: 9.2rem;
+  font-weight: 800;
+  color: rgb(204, 204, 204);
+}
+.services__list {
+  width: 100%;
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.services__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-y: hidden;
+  width: 50rem;
+  height: 50rem;
+  z-index: 1;
+}
+.services__img-box::before {
+  position: absolute;
+  content: "";
+  height: 42.5rem;
+  width: 42.5rem;
+  background-color: hsl(241deg, 24%, 75%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.services__img-box::after {
+  position: absolute;
+  content: "";
+  height: 50rem;
+  width: 50rem;
+  background-color: hsl(265deg, 15%, 90%);
+  border-radius: 50%;
+  z-index: -2;
+}
+.services__item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.services__item::before {
+  content: url(../../svg/checkmark-outline.svg);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.services__img {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+  background-color: hsl(247deg, 34%, 65%);
+  z-index: 2;
+}
+
+/*# sourceMappingURL=style.css.map */
