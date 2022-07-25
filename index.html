@@ -18,9 +18,9 @@
 		<title>Вересовий Сад</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header header--mobile">
 			<nav class="nav container">
-				<div>
+				<div class="nav__link">
 					<a href="#hero" class="nav__logo">
 						<span class="nav__logo-name">Версад</span>
 						<svg
@@ -81,12 +81,15 @@
 						<a class="nav__link" href="#section-gallery">Галерея</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#section-service">Послуги</a>
+						<a class="nav__link" href="#section-services">Послуги</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="#section-contact">Контакт</a>
 					</li>
 				</ul>
+				<button class="btn nav__mobile-btn">
+					<div class="nav__mobile-style"></div>
+				</button>
 			</nav>
 		</header>
 
@@ -97,8 +100,7 @@
 						Вересовий Сад - безтурботне життя Вашого саду!
 					</h1>
 					<p class="hero__paragraph">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, deleniti
-						dolorem illo, voluptatibus vero facere odio dolorum veniam optio est minus magnam.
+						Досконалий ландшафтний дизайн, креативні рішення, якісна майстерність.
 					</p>
 					<a class="hero__btn btn btn--hero" href="#section-about">Дізнатися більше</a>
 				</div>
@@ -114,97 +116,35 @@
 							<img class="about__img" src="svg/flowers.svg" />
 						</figure>
 						<div class="about__description">
-							<h3 class="about__heading heading-tertiary">Вересовий сад - це</h3>
+							<h3 class="about__heading heading-tertiary">Вересовий сад</h3>
 							<p class="about__paragraph about__paragraph--1">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem asperiores
-								aliquid architecto quam id magnam placeat error. Tenetur doloribus sequi velit
-								necessitatibus et! Officia, ab officiis earum pariatur amet adipisci, distinctio
-								animi ducimus eos et odit iure. Voluptate, odio! Voluptatem illo vel quae at
-								deleniti vero, temporibus molestiae, inventore magni sequi exercitationem voluptatum
-								veritatis ullam debitis adipisci facere atque, aliquam accusamus ex praesentium
-								dolorum maiores obcaecati nulla. Cum sint, ratione quo velit, voluptas repellendus
-								odit, nobis porro temporibus quod molestiae dolorem corporis tempora praesentium
-								deleniti veritatis perferendis officiis.
-							</p>
-							<p class="about__paragraph about__paragraph--2">
-								Architecto debitis ad tenetur est, sunt accusamus ipsam error atque quam cumque eum
-								fugiat, quae aperiam nemo, doloremque unde deleniti modi itaque illum delectus? Qui
-								animi dicta similique dolorum quisquam earum, dolore recusandae?
+								Ландшафтний дизайн — важлива складова облаштування комфортного, затишного, стильного
+								простору довкола будівлі. Сучасний рівень розвитку цієї галузі дозволяє втілити в
+								життя надзвичайно креативні проєкти. Компанія <b>Версад</b> професійно здійснює
+								проєкти вже понад 10 років! На ваше замовлення буде виконано вирівнювання території,
+								підбір озеленення та декоративних елементів та багато іншого, відповідно до ваших
+								вподобань. Створіть свій досконалий простір разом із професіоналом! До ваших послуг
+								— професійна робота досвідченого ландшафтного дизайнера, який працює по
+								Івано-Франківській області та у Буковелі.
 							</p>
 						</div>
+						<p class="about__paragraph about__paragraph--2">
+							Висловлюйте свої побажання, а спеціаліст запропонує власні креативні рішення та якісно
+							їх реалізує. Вже незабаром ви насолоджуватиметеся ідеальним подвір’ям.
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<section id="section-gallery" class="gallery padding-top padding-bot">
+			<section id="section-gallery" class="gallery--preview padding-bot">
 				<div class="gallery__container container">
 					<h2 class="gallery__heading heading-secondary margin-bot">Галерея</h2>
 
-					<ul class="gallery__wrapper">
-						<li class="gallery__slide">
-							<div class="gallery__photos">
-								<img class="gallery__img" alt="" src="img/portoflio/(1).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(2).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(3).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(4).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(5).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(6).jpg" />
-							</div>
-						</li>
-						<li class="gallery__slide">
-							<div class="gallery__photos">
-								<img class="gallery__img" alt="" src="img/portoflio/(7).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(8).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(9).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(10).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(11).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(12).jpg" />
-							</div>
-						</li>
-						<li class="gallery__slide">
-							<div class="gallery__photos">
-								<img class="gallery__img" alt="" src="img/portoflio/(13).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(14).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(15).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(16).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(17).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(18).jpg" />
-							</div>
-						</li>
-						<li class="gallery__slide">
-							<div class="gallery__photos">
-								<img class="gallery__img" alt="" src="img/portoflio/(19).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(20).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(21).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(22).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(23).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(24).jpg" />
-							</div>
-						</li>
-						<li class="gallery__slide">
-							<div class="gallery__photos">
-								<img class="gallery__img" alt="" src="img/portoflio/(25).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(26).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(27).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(28).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(29).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(30).jpg" />
-							</div>
-						</li>
-						<li class="gallery__slide">
-							<div class="gallery__photos">
-								<img class="gallery__img" alt="" src="img/portoflio/(31).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(32).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(33).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(34).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(35).jpg" />
-								<img class="gallery__img" alt="" src="img/portoflio/(36).jpg" />
-							</div>
-						</li>
-					</ul>
-					<div class="gallery__nav-btns">
-						<button class="btn gallery__btn gallery__btn--left">&leftarrow;</button>
-						<button class="btn gallery__btn gallery__btn--right">&rightarrow;</button>
+					<div class="gallery__preview">
+						<img class="gallery__preview-img" alt="" src="img/portfolio/(1).jpg" />
+						<img class="gallery__preview-img" alt="" src="img/portfolio/(7).jpg" />
+						<img class="gallery__preview-img" alt="" src="img/portfolio/(9).jpg" />
+						<a class="gallery__link" href="gallery.html">Перейти до галереї</a>
 					</div>
 				</div>
 			</section>
@@ -234,10 +174,10 @@
 							</li>
 						</ul>
 					</div>
-					<div class="services__img-box">
+					<div class="services__img-box services__img-box--1">
 						<img class="services__img" src="svg/gardening.svg" alt="" />
 					</div>
-					<div class="services__img-box">
+					<div class="services__img-box services__img-box--2">
 						<img class="services__img" src="svg/blooming.svg" alt="" />
 					</div>
 					<div class="services__text-box">
@@ -260,5 +200,26 @@
 				</div>
 			</section>
 		</main>
+
+		<footer id="section-contact" class="footer padding-bot padding-top">
+			<div class="container">
+				<div class="footer__container">
+					<div class="footer__col">
+						<span class="footer__col-name">Контакти</span>
+						<ul class="footer__contacts">
+							<li>
+								<span>+380 66 70 125 15 - Анатолій</span>
+							</li>
+							<li>
+								<span>+380 66 70 125 04 - Надія</span>
+							</li>
+							<li>
+								<span>versad.biz@gmail.com</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

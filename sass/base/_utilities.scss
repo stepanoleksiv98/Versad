@@ -6,6 +6,18 @@
 
 .main {
 	overflow-x: hidden;
+	z-index: 5;
+
+	&--gallery {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		section {
+			padding-top: 4rem;
+		}
+	}
 }
 
 .container {

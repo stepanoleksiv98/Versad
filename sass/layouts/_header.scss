@@ -8,8 +8,28 @@
 	color: $clr-white;
 	font-size: 2.4rem;
 	font-weight: 300;
+	transition: all 0.2s;
 
-	z-index: 999;
+	&--light {
+		background-color: $clr-white;
+		color: $clr-black;
+		box-shadow: inset 0px -1px 1px 0 $clr-main--dark;
+
+		.nav {
+			&__logo-img {
+				stroke: $clr-black;
+				&--fill {
+					fill: $clr-black;
+				}
+			}
+
+			&__mobile-style {
+				background-color: $clr-black;
+			}
+		}
+	}
+
+	z-index: 95;
 }
 
 .nav {
@@ -17,6 +37,37 @@
 
 	display: flex;
 	justify-content: space-between;
+
+	&__mobile-btn {
+		display: none;
+		z-index: 99;
+	}
+
+	&__mobile-style {
+		position: relative;
+		width: 4.6rem;
+		height: 2px;
+		background-color: $clr-white;
+
+		&::after,
+		&::before {
+			transition: top 0.3s, bottom 0.3s, transform 0.3s;
+			content: '';
+			position: absolute;
+			width: 4.6rem;
+			height: 2px;
+			background-color: inherit;
+			transform: translateX(-50%);
+		}
+
+		&::before {
+			bottom: 1.2rem;
+		}
+
+		&::after {
+			top: 1.2rem;
+		}
+	}
 
 	&__logo {
 		height: 100%;
@@ -31,10 +82,10 @@
 	&__logo-img {
 		height: 2.8rem;
 		width: fit-content;
-		stroke: white;
+		stroke: $clr-white;
 
 		&--fill {
-			fill: white;
+			fill: $clr-white;
 		}
 	}
 
@@ -48,7 +99,7 @@
 	}
 
 	&__link {
-		color: $clr-white;
+		color: inherit;
 		text-decoration: none;
 	}
 }

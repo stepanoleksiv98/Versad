@@ -6,7 +6,7 @@
 	"scripts": {
 		"watch:sass": "sass sass/main.scss css/style.css -w",
 		"devserver": "live-server",
-		"start": "npm-run-all --parallel watch:sass devserver ",
+		"start": "npm-run-all --parallel devserver watch:sass",
 		"compile:sass": "sass sass/main.scss css/style.comp.css",
 		"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
 		"compress:css": "sass css/style.prefix.css css/style.css --style=compressed",
@@ -15,11 +15,10 @@
 	"author": "Stepan Oleksiv",
 	"license": "ISC",
 	"devDependencies": {
-		"autoprefixer": "^10.4.7",
+		"autoprefixer": "^10.4.2",
 		"concat": "^1.0.3",
-		"live-server": "^1.1.0",
+		"leaflet": "^1.7.1",
 		"postcss-cli": "^9.1.0",
-		"sass": "^1.52.1",
-		"npm-run-all": "^4.1.5"
+		"sass": "^1.47.0"
 	}
 }

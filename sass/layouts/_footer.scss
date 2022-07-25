@@ -1,1 +1,23 @@
 @use '../abstracts/' as *;
+
+.footer {
+	background-color: $clr-main--2;
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+	}
+
+	&__col-name {
+		font-size: 2.6rem;
+	}
+
+	&__contacts {
+		list-style: none;
+		font-size: 2rem;
+
+		display: flex;
+		flex-direction: column;
+		gap: 1.8rem;
+	}
+}
